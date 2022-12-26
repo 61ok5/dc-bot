@@ -1,2 +1,2 @@
 # dc-bot
-Discord Bot
+Discord Bot in preparing
