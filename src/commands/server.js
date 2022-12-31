@@ -41,19 +41,20 @@ module.exports = {
 				    { name: '\u200B', value: '\u200B' },
 				    { name: 'Region / Language', value: `${guild.region || interaction.guildLocale}`, inline: true },
     				    { name: '\u200B', value: '\u200B', inline: true },
-				    { name: 'Server Boost', value: `${guild.premiumTier}`, inline: true },
+				    { name: 'Server Boost', value: `Tier ${guild.premiumTier}`, inline: true },
 				    { name: 'Owner', value: `<@!${guild.ownerId}>`, inline: true },
 				    { name: '\u200B', value: '\u200B', inline: true },
 				    { name: 'Created At', value: `${guild.createdAt.toDateString()}`, inline: true },
 				    { name: '\u200B', value: '\u200B' },
-				    { name: 'Member Count', value: `${guild.memberCount}\n(${guild.approximatePresenceCount} online, ${interaction.guild.members.cache.filter(member => member.user.bot).size} bots)`, inline: true },
+				    { name: 'Member Count', value: `Total: ${guild.memberCount}\nOnline: ${guild.approximatePresenceCount}\nBot: ${interaction.guild.members.cache.filter(member => member.user.bot).size}`, inline: true },
     				    { name: '\u200B', value: '\u200B', inline: true },
 				    { name: 'Channel Count', value: `Text: ${channelCount[0]}\nVoice: ${channelCount[1]}\nOthers: ${channelCount[2]}`, inline: true },
                                     { name: 'Role Count', value: `${guild.roles.cache.size}`, inline: true },
     				    { name: '\u200B', value: '\u200B', inline: true },
 				    { name: 'Emoji Count', value: `${guild.emojis.cache.size}`, inline: true },
-                                    { name: 'Features', value: `\`${featuresField}\``, inline: false },
-				    { name: '\u200B', value: '\u200B' }
+                                    { name: '\u200B', value: '\u200B' },
+				    { name: 'Features', value: `\`${featuresField}\``, inline: false },
+				    { name: '\u200B', value: '\u200B' },
 				)
                                 // .setImage(`${guild.iconURL({ dynamic: true })}` )
                                 .setTimestamp()
