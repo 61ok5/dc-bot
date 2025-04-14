@@ -1,7 +1,26 @@
 {
   "dependencies": {
-    "@dice-roller/rpg-dice-roller": "^5.2.1",
-    "discord.js": "^14.7.1",
-    "dotenv": "^16.0.3"
-  }
+    "@dice-roller/rpg-dice-roller": "^5.5.1",
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.5.0"
+  },
+  "name": "dc-bot",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/61ok5/dc-bot.git"
+  },
+  "keywords": [],
+  "author": "61ok5",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/61ok5/dc-bot/issues"
+  },
+  "homepage": "https://github.com/61ok5/dc-bot#readme"
 }
